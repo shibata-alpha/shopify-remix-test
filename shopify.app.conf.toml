@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+name = "shibata-sample-app"
+client_id = "070e1599f9beeae91b65ad0db714cb20"
+application_url = "https://executives-accessory-shopzilla-sacrifice.trycloudflare.com"
+embedded = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "write_products"
+
+[auth]
+redirect_urls = [
+  "https://executives-accessory-shopzilla-sacrifice.trycloudflare.com/auth/callback",
+  "https://executives-accessory-shopzilla-sacrifice.trycloudflare.com/auth/shopify/callback",
+  "https://executives-accessory-shopzilla-sacrifice.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2023-07"
+
+[pos]
+embedded = false
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "shibata-dev-sms.myshopify.com"
